@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">E-lementarz Mobile</string>
 
-    <string name="hello_world">Hello world!</string>
+    <string name="hello_world">Jakie dźwięki wydaje krowa?</string>
     <string name="action_settings">Settings</string>
     <string name="answ4">Krowa</string>
 </resources>
