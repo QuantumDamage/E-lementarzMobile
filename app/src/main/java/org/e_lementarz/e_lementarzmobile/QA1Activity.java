@@ -1,30 +1,27 @@
 package org.e_lementarz.e_lementarzmobile;
 
-import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
+import android.widget.TextView;
 
 
-public class MainActivity extends ActionBarActivity {
-
-    public void startQA1 (View view) {
-        Intent intent = new Intent(this, QA1Activity.class);
-        startActivity(intent);
-    }
+public class QA1Activity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        TextView textView = new TextView(this);
+        String message = "asdfasdf";
+        textView.setText(message);
+        setContentView(textView);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_qa1, menu);
         return true;
     }
 
