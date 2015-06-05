@@ -16,5 +16,6 @@
         android:layout_height="wrap_content"
         android:src="@drawable/button2"
         android:layout_gravity="center"
-        android:onClick="startQA1"/>
+        android:onClick="startQA1"
+        android:scaleType="centerCrop"/>
 </FrameLayout>
