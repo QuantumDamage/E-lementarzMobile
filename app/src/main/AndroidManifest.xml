@@ -20,7 +20,8 @@
         <activity
             android:name=".QA1Activity"
             android:label="@string/title_activity_qa1"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="landscape">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="org.e_lementarz.e_lementarzmobile.MainActivity" />
