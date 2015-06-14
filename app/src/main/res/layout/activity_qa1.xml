@@ -35,14 +35,14 @@
         android:text="@string/buttonMiau" />
 
     <Button
-        android:id="@+id/imageButton3"
+        android:id="@+id/Button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageButton2"
-        android:layout_centerHorizontal="true"
-        android:contentDescription="@string/button2005"
+        android:layout_below="@id/Button1"
+        android:layout_margin="50dp"
+        android:layout_toLeftOf="@id/Question"
         android:onClick="onClick2005"
-        android:src="@drawable/b2005" />
+        android:text="@string/buttonKra" />
 
     <Button
         android:id="@+id/imageButton4"
