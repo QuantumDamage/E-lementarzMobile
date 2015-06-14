@@ -1,103 +1,57 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:orientation="horizontal" android:background="@drawable/background" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
 
-    <ImageButton
-        android:id="@+id/imageButton1"
+    <TextView
+        android:id="@+id/Question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="50dp"
+        android:text="Jakie dźwięki wydaje krowa?" />
+
+    <Button
+        android:id="@+id/Button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:src="@drawable/b2003"
         android:contentDescription="@string/button2003"
-        android:onClick="onClick2003" />
+        android:onClick="onClick2003"
+        android:src="@drawable/b2003" />
 
-    <ImageButton
+    <Button
         android:id="@+id/imageButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageButton1"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/b2004"
         android:contentDescription="@string/button2004"
-        android:onClick="onClick2004"/>
+        android:onClick="onClick2004"
+        android:src="@drawable/b2004" />
 
-    <ImageButton
+    <Button
         android:id="@+id/imageButton3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageButton2"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/b2005"
         android:contentDescription="@string/button2005"
-        android:onClick="onClick2005"/>
+        android:onClick="onClick2005"
+        android:src="@drawable/b2005" />
 
-    <ImageButton
+    <Button
         android:id="@+id/imageButton4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageButton3"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/b2006"
         android:contentDescription="@string/button2006"
-        android:onClick="onClick2006"/>
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="26dp"
-        android:paddingBottom="5dp"
-        android:text="@string/Version"
-        android:textColor="#f7f9f6"
-        android:textSize="13dp"
-        android:textStyle="italic"/>
-<!--
-android:textStyle="@styles/VersionFont" />
+        android:onClick="onClick2006"
+        android:src="@drawable/b2006" />
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/answ4"
-        android:id="@+id/button"
-        android:layout_alignParentBottom="true"
-        android:layout_toEndOf="@+id/textView"
-        android:layout_marginBottom="50dp" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button2"
-        android:layout_marginStart="58dp"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button3"
-        android:layout_alignTop="@+id/button2"
-        android:layout_toEndOf="@+id/textView" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button4"
-        android:layout_alignTop="@+id/button"
-        android:layout_alignEnd="@+id/button2" />
-   -->
 
 </RelativeLayout>
