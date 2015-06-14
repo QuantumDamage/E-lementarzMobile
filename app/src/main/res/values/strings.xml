@@ -4,15 +4,12 @@
 
 
     <string name="Version">Version 1.0</string>
-    <string name="buttonMuu">Answer 2003</string>
-    <string name="button2004">Answer 2004</string>
-    <string name="button2005">Answer 2005</string>
-    <string name="button2006">Answer 2006</string>
+    <string name="buttonMuu">Muuu</string>
+    <string name="buttonMiau">Miau Miau</string>
+    <string name="buttonKra">Kra Kra</string>
+    <string name="buttonHau">Hau Hau</string>
 
 
     <string name="action_settings">Settings</string>
-    <!--
-    <string name="hello_world">Jakie dźwięki wydaje krowa?</string>
-    <string name="answ4">Krowa</string>
-    -->
+
 </resources>

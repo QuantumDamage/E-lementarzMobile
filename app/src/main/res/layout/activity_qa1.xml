@@ -18,18 +18,21 @@
         android:id="@+id/Button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/Question"
+        android:layout_margin="50dp"
+        android:layout_toLeftOf="@id/Question"
         android:onClick="onClick2003"
         android:text="@string/buttonMuu" />
 
     <Button
-        android:id="@+id/imageButton2"
+        android:id="@+id/Button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageButton1"
-        android:layout_centerHorizontal="true"
-        android:contentDescription="@string/button2004"
+        android:layout_below="@id/Question"
+        android:layout_margin="50dp"
+        android:layout_toRightOf="@id/Question"
         android:onClick="onClick2004"
-        android:src="@drawable/b2004" />
+        android:text="@string/buttonMiau" />
 
     <Button
         android:id="@+id/imageButton3"
