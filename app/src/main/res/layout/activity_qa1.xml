@@ -45,14 +45,14 @@
         android:text="@string/buttonKra" />
 
     <Button
-        android:id="@+id/imageButton4"
+        android:id="@+id/Button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageButton3"
-        android:layout_centerHorizontal="true"
-        android:contentDescription="@string/button2006"
+        android:layout_below="@id/Button2"
+        android:layout_margin="50dp"
+        android:layout_toRightOf="@id/Question"
         android:onClick="onClick2006"
-        android:src="@drawable/b2006" />
+        android:text="@string/buttonHau" />
 
 
 </RelativeLayout>
