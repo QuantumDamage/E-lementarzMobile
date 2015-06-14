@@ -11,17 +11,15 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:padding="50dp"
-        android:text="Jakie dźwięki wydaje krowa?" />
+        android:text="Jakie dźwięki wydaje krowa?"
+        android:textAppearance="?android:textAppearanceLarge" />
 
     <Button
         android:id="@+id/Button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:contentDescription="@string/button2003"
         android:onClick="onClick2003"
-        android:src="@drawable/b2003" />
+        android:text="@string/buttonMuu" />
 
     <Button
         android:id="@+id/imageButton2"
