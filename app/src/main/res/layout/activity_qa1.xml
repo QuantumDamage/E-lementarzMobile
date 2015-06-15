@@ -49,5 +49,13 @@
         android:onClick="onClick2006"
         android:text="@string/buttonHau" />
 
+    <TextView
+        android:id="@+id/testField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Button4"
+        android:layout_toRightOf="@id/Button4"
+        android:text="test: " />
+
 
 </RelativeLayout>
