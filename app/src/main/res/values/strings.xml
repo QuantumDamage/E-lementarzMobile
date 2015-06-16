@@ -17,6 +17,10 @@
     <string name="button2False2">1</string>
     <string name="button2False3">4</string>
 
+    <string name="wrong">Spróbój ponownie</string>
+    <string name="good">Dobrze :D</string>
+
+
     <string name="action_settings">Settings</string>
 
 </resources>

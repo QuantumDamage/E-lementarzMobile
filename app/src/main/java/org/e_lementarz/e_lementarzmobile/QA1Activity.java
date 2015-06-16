@@ -55,29 +55,36 @@ public class QA1Activity extends ActionBarActivity {
 
         if (quizPack == 0) {
             testText.setText("Wybrałeś " + quizPack + " zestaw");
-            question.setText("Jakie dźwięki wydaje krowa?");
-
+            question.setText(getString(R.string.Question1));
+            button1.setText(getString(R.string.button1False1));
+            button2.setText(getString(R.string.button1False2));
+            button3.setText(getString(R.string.button1True));
+            button4.setText(getString(R.string.button1False3));
         } else if (quizPack == 1) {
             testText.setText("Wybrałeś " + quizPack + " zestaw");
-            question.setText("Ile kół ma motocykl?");
+            question.setText(getString(R.string.Question2));
+            button1.setText(getString(R.string.button2False1));
+            button2.setText(getString(R.string.button2False2));
+            button3.setText(getString(R.string.button2True));
+            button4.setText(getString(R.string.button2False3));
         }
 
     }
     public void onClick2003 (View view)
     {
-        Toast.makeText(this, "Wrong! Try again", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, getString(R.string.wrong), Toast.LENGTH_SHORT).show();
     }
     public void onClick2004 (View view)
     {
-        Toast.makeText(this, "Wrong! Try again", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, getString(R.string.wrong), Toast.LENGTH_SHORT).show();
     }
     public void onClick2005 (View view)
     {
-        Toast.makeText(this, "Yes! Well done", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, getString(R.string.good), Toast.LENGTH_SHORT).show();
     }
     public void onClick2006 (View view)
     {
-        Toast.makeText(this, "Wrong! Try again", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, getString(R.string.wrong), Toast.LENGTH_SHORT).show();
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
