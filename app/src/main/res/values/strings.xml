@@ -4,12 +4,18 @@
 
 
     <string name="Version">Version 1.0</string>
-    <string name="Question1">Jakie dźwięki wydaje krowa?</string>
-    <string name="buttonTrue">Muuu</string>
-    <string name="buttonFalse1">Miau Miau</string>
-    <string name="buttonFalse2">Kra Kra</string>
-    <string name="buttonFalse3">Hau Hau</string>
 
+    <string name="Question1">Jakie dźwięki wydaje krowa?</string>
+    <string name="button1True">Muuu</string>
+    <string name="button1False1">Miau Miau</string>
+    <string name="button1False2">Kra Kra</string>
+    <string name="button1False3">Hau Hau</string>
+
+    <string name="Question2">Ile kół ma motocykl?</string>
+    <string name="button2True">2</string>
+    <string name="button2False1">3</string>
+    <string name="button2False2">1</string>
+    <string name="button2False3">4</string>
 
     <string name="action_settings">Settings</string>
 

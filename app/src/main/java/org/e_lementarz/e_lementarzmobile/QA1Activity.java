@@ -6,6 +6,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -45,10 +46,20 @@ public class QA1Activity extends ActionBarActivity {
         setContentView(R.layout.activity_qa1);
 
         TextView testText = (TextView) findViewById(R.id.testField);
+
+        TextView question = (TextView) findViewById(R.id.Question);
+        Button button1 = (Button) findViewById(R.id.Button1);
+        Button button2 = (Button) findViewById(R.id.Button2);
+        Button button3 = (Button) findViewById(R.id.Button3);
+        Button button4 = (Button) findViewById(R.id.Button4);
+
         if (quizPack == 0) {
             testText.setText("Wybrałeś " + quizPack + " zestaw");
+            question.setText("Jakie dźwięki wydaje krowa?");
+
         } else if (quizPack == 1) {
             testText.setText("Wybrałeś " + quizPack + " zestaw");
+            question.setText("Ile kół ma motocykl?");
         }
 
     }

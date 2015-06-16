@@ -13,7 +13,7 @@ public class MainActivity extends ActionBarActivity {
 
 
     public void startQA1 (View view) {
-        Intent intent = new Intent(this, QA1Activity.class);
+        Intent intent = new Intent(MainActivity.this, QA1Activity.class);
         startActivity(intent);
     }
 
