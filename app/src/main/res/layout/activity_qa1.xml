@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="Jakie dźwięki wydaje krowa?"
+        android:text="@string/Question1"
         android:textAppearance="?android:textAppearanceLarge" />
 
     <Button
@@ -20,7 +20,7 @@
         android:layout_below="@id/Question"
         android:layout_toLeftOf="@id/Question"
         android:onClick="onClick2003"
-        android:text="@string/buttonMuu" />
+        android:text="@string/buttonFalse1" />
 
     <Button
         android:id="@+id/Button2"
@@ -29,7 +29,7 @@
         android:layout_below="@id/Question"
         android:layout_toRightOf="@id/Question"
         android:onClick="onClick2004"
-        android:text="@string/buttonMiau" />
+        android:text="@string/buttonFalse2" />
 
     <Button
         android:id="@+id/Button3"
@@ -38,7 +38,7 @@
         android:layout_below="@id/Button1"
         android:layout_toLeftOf="@id/Question"
         android:onClick="onClick2005"
-        android:text="@string/buttonKra" />
+        android:text="@string/buttonTrue" />
 
     <Button
         android:id="@+id/Button4"
@@ -47,7 +47,7 @@
         android:layout_below="@id/Button2"
         android:layout_toRightOf="@id/Question"
         android:onClick="onClick2006"
-        android:text="@string/buttonHau" />
+        android:text="@string/buttonFalse3" />
 
     <TextView
         android:id="@+id/testField"

@@ -45,7 +45,12 @@ public class QA1Activity extends ActionBarActivity {
         setContentView(R.layout.activity_qa1);
 
         TextView testText = (TextView) findViewById(R.id.testField);
-        testText.setText("" + quizPack);
+        if (quizPack == 0) {
+            testText.setText("Wybrałeś " + quizPack + " zestaw");
+        } else if (quizPack == 1) {
+            testText.setText("Wybrałeś " + quizPack + " zestaw");
+        }
+
     }
     public void onClick2003 (View view)
     {

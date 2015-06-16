@@ -4,10 +4,11 @@
 
 
     <string name="Version">Version 1.0</string>
-    <string name="buttonMuu">Muuu</string>
-    <string name="buttonMiau">Miau Miau</string>
-    <string name="buttonKra">Kra Kra</string>
-    <string name="buttonHau">Hau Hau</string>
+    <string name="Question1">Jakie dźwięki wydaje krowa?</string>
+    <string name="buttonTrue">Muuu</string>
+    <string name="buttonFalse1">Miau Miau</string>
+    <string name="buttonFalse2">Kra Kra</string>
+    <string name="buttonFalse3">Hau Hau</string>
 
 
     <string name="action_settings">Settings</string>
