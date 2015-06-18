@@ -40,7 +40,7 @@ public class QA1Activity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        int quizPack = randInt(0, 1);
+        int quizPack = randInt(1, 4);
         super.onCreate(savedInstanceState);
         Intent intent = getIntent();
         setContentView(R.layout.activity_qa1);
@@ -53,21 +53,19 @@ public class QA1Activity extends ActionBarActivity {
         Button button3 = (Button) findViewById(R.id.Button3);
         Button button4 = (Button) findViewById(R.id.Button4);
 
-        if (quizPack == 0) {
-            testText.setText("Wybrałeś " + quizPack + " zestaw");
-            question.setText(getString(R.string.Question1));
-            button1.setText(getString(R.string.button1False1));
-            button2.setText(getString(R.string.button1False2));
-            button3.setText(getString(R.string.button1True));
-            button4.setText(getString(R.string.button1False3));
-        } else if (quizPack == 1) {
-            testText.setText("Wybrałeś " + quizPack + " zestaw");
-            question.setText(getString(R.string.Question2));
-            button1.setText(getString(R.string.button2False1));
-            button2.setText(getString(R.string.button2False2));
-            button3.setText(getString(R.string.button2True));
-            button4.setText(getString(R.string.button2False3));
-        }
+        int questionText = getResources().getIdentifier("Question" + quizPack, "string", getPackageName());
+        int goodAnswer = getResources().getIdentifier("button" + quizPack + "True", "string", getPackageName());
+        int badAnswer1 = getResources().getIdentifier("button" + quizPack + "False1", "string", getPackageName());
+        int badAnswer2 = getResources().getIdentifier("button" + quizPack + "False2", "string", getPackageName());
+        int badAnswer3 = getResources().getIdentifier("button" + quizPack + "False3", "string", getPackageName());
+
+        question.setText(getString(questionText));
+        testText.setText("Wybrałeś " + quizPack + " zestaw");
+        button3.setText(getString(goodAnswer));
+        button1.setText(getString(badAnswer1));
+        button2.setText(getString(badAnswer2));
+        button4.setText(getString(badAnswer3));
+
 
     }
     public void onClick2003 (View view)

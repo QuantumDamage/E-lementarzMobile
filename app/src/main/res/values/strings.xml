@@ -17,6 +17,18 @@
     <string name="button2False2">1</string>
     <string name="button2False3">4</string>
 
+    <string name="Question3">Ile łap ma kot?</string>
+    <string name="button3True">4</string>
+    <string name="button3False1">3</string>
+    <string name="button3False2">1</string>
+    <string name="button3False3">2</string>
+
+    <string name="Question4">Jaki kolor ma słońce?</string>
+    <string name="button4True">Żółty</string>
+    <string name="button4False1">Niebieski</string>
+    <string name="button4False2">Czerwony</string>
+    <string name="button4False3">Zielony</string>
+
     <string name="wrong">Spróbój ponownie</string>
     <string name="good">Dobrze :D</string>
 
