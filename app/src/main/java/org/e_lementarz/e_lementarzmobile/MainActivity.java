@@ -7,6 +7,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.google.android.gms.analytics.HitBuilders;
+
 
 public class MainActivity extends ActionBarActivity {
 
@@ -39,6 +41,9 @@ public class MainActivity extends ActionBarActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            MyApp.tracker().send(new HitBuilders.EventBuilder("ui", "open")
+                    .setLabel("settings")
+                    .build());
             return true;
         }
 
