@@ -9,14 +9,25 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/mapa1280"
-        android:scaleType="centerCrop"/>
+        android:scaleType="centerCrop"
+        android:src="@drawable/mapa1280" />
+
+    <ImageButton
+        android:id="@+id/startQA1Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:onClick="startQA1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/button2" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/button2"
-        android:layout_centerInParent="true"
-        android:onClick="startQA1"
-        android:scaleType="centerCrop"/>
+        android:layout_below="@id/startQA1Button"
+        android:layout_toRightOf="@id/startQA1Button"
+        android:onClick="startVideo"
+        android:scaleType="centerCrop"
+        android:src="@drawable/button2" />
+
 </RelativeLayout>
