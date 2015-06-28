@@ -19,6 +19,11 @@ public class MainActivity extends ActionBarActivity {
         startActivity(intent);
     }
 
+    public void startVideo(View view) {
+        Intent intent = new Intent(MainActivity.this, VideoActivity.class);
+        startActivity(intent);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
