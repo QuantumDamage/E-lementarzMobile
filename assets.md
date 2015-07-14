@@ -1,0 +1,1 @@
+* map: https://commons.wikimedia.org/wiki/File:BlankMap-World-noborders.png
