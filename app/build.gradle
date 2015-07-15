@@ -4,12 +4,18 @@ android {
     compileSdkVersion 22
     buildToolsVersion "22.0.1"
 
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE-FIREBASE.txt'
+        exclude 'META-INF/NOTICE'
+    }
+
     defaultConfig {
         applicationId "org.e_lementarz.e_lementarzmobile"
         minSdkVersion 9
         targetSdkVersion 19
         versionCode 3
-        versionName "0.526"
+        versionName "0.xxx"
         // Version name should be 1.0 - estimated number of days until global learning x-prize submission deadline divided by 1000
         // in Python terms: 1.0 - (493/1000.0)
         // https://www.timeanddate.com/date/durationresult.html?y1=2015&m1=6&d1=25&y2=2016&m2=10&d2=31&h1=19&i1=10&s1=30&h2=12&i2=0&s2=0
@@ -26,5 +32,6 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:22.1.1'
     compile 'com.google.android.gms:play-services:7.5.0'
+    compile 'com.firebase:firebase-client-android:2.3.1+'
 
 }

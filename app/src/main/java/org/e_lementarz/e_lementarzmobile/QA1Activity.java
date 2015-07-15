@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.firebase.client.Firebase;
+
 import java.util.Random;
 
 
@@ -40,12 +42,16 @@ public class QA1Activity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Firebase.setAndroidContext(this);
+        Firebase myFirebaseRef = new Firebase("https://torrid-inferno-7915.firebaseIO.com/");
         int quizPack = randInt(1, 4);
         super.onCreate(savedInstanceState);
         Intent intent = getIntent();
         setContentView(R.layout.activity_qa1);
 
         TextView testText = (TextView) findViewById(R.id.testField);
+
+        myFirebaseRef.child(String.valueOf(System.currentTimeMillis())).setValue(quizPack);
 
         TextView question = (TextView) findViewById(R.id.Question);
         Button button1 = (Button) findViewById(R.id.Button1);
