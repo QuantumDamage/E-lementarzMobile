@@ -71,7 +71,8 @@ public class QA1Activity extends ActionBarActivity {
         button2.setText(getString(badAnswer2));
         button4.setText(getString(badAnswer3));
 
-        String deviceId = Settings.Secure.ANDROID_ID;
+        //String deviceId = Settings.Secure.ANDROID_ID;
+        String deviceId = Settings.Secure.getString(getApplicationContext().getContentResolver(), Settings.Secure.ANDROID_ID);
         String submitTimestamp = String.valueOf(System.currentTimeMillis());
         //myFirebaseRef.child().setValue(quizPack);
         myFirebaseRef.child(deviceId).child(submitTimestamp).child("Quiz Pack").setValue(quizPack);
