@@ -2,6 +2,7 @@ package org.e_lementarz.e_lementarzmobile;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -51,8 +52,6 @@ public class QA1Activity extends ActionBarActivity {
 
         TextView testText = (TextView) findViewById(R.id.testField);
 
-        myFirebaseRef.child(String.valueOf(System.currentTimeMillis())).setValue(quizPack);
-
         TextView question = (TextView) findViewById(R.id.Question);
         Button button1 = (Button) findViewById(R.id.Button1);
         Button button2 = (Button) findViewById(R.id.Button2);
@@ -72,6 +71,11 @@ public class QA1Activity extends ActionBarActivity {
         button2.setText(getString(badAnswer2));
         button4.setText(getString(badAnswer3));
 
+        String deviceId = Settings.Secure.ANDROID_ID;
+        String submitTimestamp = String.valueOf(System.currentTimeMillis());
+        //myFirebaseRef.child().setValue(quizPack);
+        myFirebaseRef.child(deviceId).child(submitTimestamp).child("Quiz Pack").setValue(quizPack);
+        myFirebaseRef.child(deviceId).child(submitTimestamp).child("Duration").setValue(3245);
 
     }
     public void onClick2003 (View view)
