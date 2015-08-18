@@ -54,4 +54,11 @@ public class MainActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
+
+    public void bricksClick(View view) {
+        Intent intent = new Intent(MainActivity.this, BricksActivity.class);
+        startActivity(intent);
+    }
 }
