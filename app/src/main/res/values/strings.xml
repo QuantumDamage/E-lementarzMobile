@@ -38,5 +38,6 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_bricks">BricksActivity</string>
+    <string name="title_activity_czytanie">Czytanie</string>
 
 </resources>
