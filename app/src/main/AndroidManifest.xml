@@ -75,7 +75,7 @@
         <activity
             android:name=".BricksActivity"
             android:label="@string/title_activity_bricks"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="org.e_lementarz.e_lementarzmobile.MainActivity" />
@@ -83,7 +83,15 @@
         <activity
             android:name=".Czytanie"
             android:label="@string/title_activity_czytanie"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.e_lementarz.e_lementarzmobile.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Bricks2Activity"
+            android:label="@string/title_activity_bricks2"
+            android:screenOrientation="landscape" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="org.e_lementarz.e_lementarzmobile.MainActivity" />

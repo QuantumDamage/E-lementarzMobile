@@ -61,4 +61,9 @@ public class MainActivity extends ActionBarActivity {
         Intent intent = new Intent(MainActivity.this, BricksActivity.class);
         startActivity(intent);
     }
+
+    public void bricks2Click(View view) {
+        Intent intent = new Intent(MainActivity.this, Bricks2Activity.class);
+        startActivity(intent);
+    }
 }
